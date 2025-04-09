@@ -26,26 +26,35 @@ header {
   gap: 48px;
 }
 
-.nav-item a {
+.nav-item {
   color: #bdbdbd;
   text-decoration: none;
   font-weight: 600;
+  transition: color .2s;
 }
 
-.nav-item.active a {
+.nav-item:hover {
   color: rgb(171, 90, 247);
-  border-bottom: 3px solid rgb(171, 90, 247);
+}
+
+.nav-item:active {
+  color: rgb(86, 20, 148);
+  scale: calc(.95);
 }
 
 #mobile-btn {
   display: none;
 }
 
+#mobile-nav-list {
+  list-style: none;
+}
+
 #mobile-menu {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   #nav-list {
     display: none;
   }
