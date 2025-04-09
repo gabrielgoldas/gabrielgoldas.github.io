@@ -1,54 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - Gabriel Goldas, Programador</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div>
-        <div class="logo">Gabriel Goldas</div>
-        <div class="title">Programador Web</div>
-      </div>
-      <nav>
-        <a href="./index.html" class="nav-link">Início</a>
-        <a href="./sobre.html" class="nav-link">Sobre Mim</a>
-        <a href="./contato.html" class="nav-link">Contato</a>
-      </nav>
-      <div></div>
-    </header>
-    <div class="container">
-      <section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Links CSS -->
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/header.css" />
+  <link rel="stylesheet" href="./src/styles/content.css" />
+  <link rel="stylesheet" href="./src/styles/footer.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- devicon -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script src="./src/js/script.js" defer></script>
+
+  <title>Início - Gabriel Goldas, Programador</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <button id="logo">
+        <i class="fa-brands fa-gg"></i>
+      </button>
+      <ul id="nav-list">
+        <li class="nav-item active">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
+
+      <button id="mobile-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobile-menu">
+      <ul id="mobile-nav-list">
+        <li class="nav-item">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="home" data-aos="zoom-out" data-aos-duration="1500">
+      <div id="intro">
         <h1>Gabriel Goldas, Programador</h1>
         <p>
           Sou um programador web apaixonado por desenvolvimento de
-          software e tecnologia. Tenho experiência com várias tecnologias web
-          modernas, incluindo HTML, CSS, JavaScript, TypeScript, Ruby on Rails e PostgreSQL.
+          software e tecnologia.
         </p>
-      </section>
-
-      <section>
-        <a href="./sobre.html" class="call-to-action">Saiba Mais</a>
-        <a href="./contato.html" class="call-to-action">Entre em Contato</a>
-      </section>
-
-      <section class="skills">
-        <h2>Habilidades</h2>
+      </div>
+      <div id="ability">
+        <h3>Android</h3>
         <ul>
-          <li>HTML, CSS e JavaScript</li>
-          <li>React e Next.js</li>
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL, MongoDB e Redis</li>
-          <li>Versionamento de código com Git</li>
-          <li>Experiência em desenvolvimento ágil (Scrum)</li>
+          <li><i class="devicon-java-plain"></i></li>
+          <li><i class="devicon-kotlin-plain colored" ></i></li>
+          <li><i class="devicon-jetpackcompose-plain colored"></i></li>
+          <li><i class="devicon-firebase-plain colored"></i></li>
+          <li><i class="devicon-sqlite-plain colored"></i></li>
         </ul>
-      </section>
-    </div>
-    <footer>
-      <p>&copy; 2024 Gabriel Goldas. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+
+        <h3>Front-end (Web)</h3>
+        <ul>
+          <li><i class="devicon-html5-plain colored"></i></li>
+          <li><i class="devicon-css3-plain colored"></i></li>
+          <li><i class="devicon-sass-original colored"></i></li>
+          <li><i class="devicon-javascript-plain colored"></i></li>
+          <li><i class="devicon-typescript-plain colored"></i></li>
+          <li><i class="devicon-react-original colored"></i></li>
+          <li><i class="devicon-nextjs-plain"></i></li>
+          <li><i class="devicon-angularjs-plain colored"></i></li>
+        </ul>
+
+        <h3>Back-end</h3>
+        <ul>
+          <li><i class="devicon-nodejs-plain colored"></i></li>
+          <li><i class="devicon-postgresql-plain"></i></li>
+          <li><i class="devicon-prisma-original"></i></li>
+        </ul>
+
+        <h3>Versionamento</h3>
+        <ul>
+          <li><i class="devicon-git-plain colored"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 data-aos="fade-up"
+      data-aos-anchor-placement="top-center" data-aos-duration="700">Projetos</h1>
+      <div id="container-projects">
+        <div class="project-item item1"  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+          <h3 class="title-project">Simple Kanban</h3>
+          <img src="./src/public/simple-kanban.jpeg" alt="Imagem do app Simple Kanban">
+          <p class="description-project">
+
+            <a href="">Clique aqui</a> para conferir!
+          </p>
+        </div>
+        <div class="project-item item2"  data-aos="flip-right" data-aos-easing="ease-in-out" data-aos-duration="900">
+          <h3 class="title-project">WeatherApp</h3>
+          <img src="./src/public/weatherapp.jpeg" alt="Imagem do app WeatherApp">
+          <p class="description-project">
+
+            <a href="">Clique aqui</a> para conferir!
+          </p>
+        </div>
+        <div class="project-item item3" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-duration="700">
+          <h3 class="title-project">Visit Card</h3>
+          <img src="./src/public/visit_card.png" alt="Imagem do app Visit Card">
+          <p class="description-project">
+
+            <a href="">Clique aqui</a> para conferir!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+      >Sobre Mim</h1>
+      <h2>Biografia</h2>
+      <p>
+        Sou apaixonado por tecnologia e programação desde cedo. Ao longo da
+        minha trajetória, dediquei-me ao desenvolvimento web e descobri minha
+        paixão por criar soluções digitais que impactam positivamente a vida
+        das pessoas.
+      </p>
+      <h2>Formação Acadêmica</h2>
+      <p>
+        Sou graduado em Ciência da Computação pela Universidade XYZ, onde
+        desenvolvi uma base sólida em algoritmos, estruturas de dados e
+        engenharia de software. Durante meu período acadêmico, participei
+        ativamente de projetos de pesquisa e desenvolvimento, explorando novas
+        tecnologias e frameworks que me prepararam para os desafios do mercado
+        de trabalho.
+      </p>
+    </section>
+
+    <section id="contact">
+      <ul id="contact-list">
+        <li data-aos="flip-left" data-aos-duration="1000">
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li data-aos="flip-left" data-aos-duration="1500">
+          <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li data-aos="flip-left" data-aos-duration="2000">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </li>
+        <li data-aos="flip-left" data-aos-duration="2600">
+          <a href="mailto:gabriel.goldas@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>Gabriel Goldas &copy; 2025. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
