@@ -132,7 +132,7 @@
   }
 
   h2 {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -156,6 +156,14 @@
   }
 }
 
+@media (max-width: 425px) {
+
+  .bio,
+  .academic {
+    text-align: center;
+  }
+}
+
 @media (min-width: 550px) {
   #container-projects .project-item img {
     width: 500px;
@@ -170,4 +178,54 @@
     height: 500px;
     object-fit: cover;
   }
+}
+
+@media (min-width: 1440px) {
+  #container-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    align-self: center;
+  }
+
+  #home #intro h1 {
+    font-size: 5rem;
+  }
+
+  #ability h3,
+  #about .bio h2,
+  #about .academic h2 {
+    font-size: 2.5rem;
+  }
+
+  #ability ul li i {
+    font-size: 6rem;
+  }
+
+  #projects h1,
+  #about h1 {
+    font-size: 4rem;
+  }
+
+  .project-item h3,
+  .project-item p,
+  #footer p {
+    font-size: 2rem;
+  }
+
+  #about .bio p,
+  #about .academic p {
+    font-size: 2rem;
+  }
+
+  #contact-list li a {
+    font-size: 4rem;
+  }
+
 }
